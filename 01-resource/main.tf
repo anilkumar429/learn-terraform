@@ -9,6 +9,7 @@ resource "azurerm_virtual_machine" "test" {
   location              = "UK West"
   resource_group_name   = "project-1"
   network_interface_ids = ["/subscriptions/7d58fd8a-e8be-4f50-b9f6-03616700d9fc/resourceGroups/project-1/providers/Microsoft.Network/networkInterfaces/terraform-testing"]
+  # need to create network interface id manually in Azure and provide here
   vm_size               = "Standard_B2s"
 
   delete_os_disk_on_termination = true

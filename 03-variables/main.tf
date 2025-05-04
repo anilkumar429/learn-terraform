@@ -100,6 +100,7 @@ output "server_count" {
 }
 
 
+# terraform apply -auto-approve -var-file=dev.tfvars/prod.tfvars
 
 
 

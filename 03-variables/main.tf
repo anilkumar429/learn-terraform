@@ -79,6 +79,8 @@ output "command-line-variable" {
   value = var.cli
 }
 
+# terraform apply -auto-approve -var cli=100
+
 ## Variable from terraform.tfvars
 variable "v1" {}
 output "v1" {
